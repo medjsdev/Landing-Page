@@ -15,10 +15,51 @@ body {
 }
 
 .header, .subheader {
-    background: rgb(2,0,36);
-    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(116,116,159,1) 100%);
     padding: 0 60px;
     color: white;
+}
+
+.gradient-background{
+    background: rgb(2,0,36);
+    background: linear-gradient(300deg, rgba(2,0,36,1) 0%, rgba(116,116,159,1) 100%);
+}
+
+.subheader {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.left-header{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+.left-header h2{
+    font-size: 50px;
+}
+
+.left-header p {
+    font-size: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.left-header button{
+    background-color: deepskyblue;
+    color: white;
+    padding: 7px;
+    border-radius: 7px;
+    border-color: deepskyblue;
+    width: fit-content;
+}
+
+.left-header button:hover{
+    background-color: darkslateblue;
+    border-color: darkslateblue;
 }
 
 .logo_cat{
@@ -30,8 +71,8 @@ body {
 
 .footer {
     background: rgb(2,0,36);
-    background: linear-gradient(300deg, rgba(2,0,36,1) 0%, rgba(116,116,159,1) 100%);
-    padding: 10px;
+    background: linear-gradient(-300deg, rgba(2,0,36,1) 0%, rgba(116,116,159,1) 100%);
+    padding: 30px;
     display: flex;
     justify-content: center;
     color: white;
@@ -86,4 +127,59 @@ ul {
     text-align: center;
     width: 200px;
     padding: 10px;
+}
+
+.quote{
+    background-color: #f1f2f3;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.quote .quote-text{
+    text-align: center;
+    padding: 150px;
+}
+
+.quote .quote-author{
+    text-align: right;
+    font-weight: bold;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 35px;
+    margin: 100px 250px;
+    padding: 100px;
+    background-color: deepskyblue;
+    gap: 90px;
+    color: white;
+    flex-wrap: wrap;
+
+}
+
+.action-text h3 {
+    font-weight: bold;
+    text-align: left;
+}
+
+.action-text p {
+    opacity: 0.85;
+    text-align: left;
+}
+
+.action-button{
+    border: 2px solid white;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 10px 20px;
+
+}
+
+.action-button:hover{
+    background-color: darkslateblue;
 }
